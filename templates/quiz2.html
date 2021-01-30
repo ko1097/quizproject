@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}" >
+  </head>
+  <body>
+    <div class="home">
+      <form class="" action="" method="">
+        {% csrf_token %}
+        {%for i in qu %}
+        <h1 class="heading">Q - {{i.question}}</h1>
+
+        <label class="radio"><input  type="radio" name="name" value="{{i.optionone}}">1. {{i.optionone}}</label>
+
+
+        <br>
+        <label class="radio"><input  type="radio" name="name" value="{{i.optiontwo}}">2. {{i.optiontwo}}</label>
+        <br>
+        <label class="radio" ><input  type="radio" name="name" value="{{i.optionthree}}">3. {{i.optionthree}}</label>
+        <br>
+        <label class="radio"><input   type="radio" name="name" value="{{i.optionfour}}">4. {{i.optionfour}}</label>
+        <br>
+        {% endfor %}
+        <br>
+        <button type="submit" id="save_as" class="sub btn">submit</button>
+        <br>
+        {% if qu.has_next %}
+         <a href="?page={{ qu.next_page_number }}"> <button type="button" class="next btn" id="button"> Next </button></a>
+
+           {% else %}
+
+          <a href="result/" ><button type="button" class="next btn" id="button"> submit Test </button></a>
+          {% endif %}
+
+
+           {% for i in qu %}
+           <p class="para"> Answer: {{i.answer}}</p>
+           {% endfor %}
+
+      </form>
+    </div>
+    <div class="timer">
+      Time: <h4 class="last"> time</h4>
+    </div>
+
+
+
+  </body>
+  <script type="text/javascript" src="{% static "js/new.js" %}">
+  </script>
+</html>

@@ -1,0 +1,78 @@
+.home {
+    margin-left: 350px;
+
+    min-height: 25vh;
+    height: 50vh;
+    width: 50%;
+    min-width: 50%;
+    margin-top: 160px;
+    text-align: center;
+    border: 3px solid #f55c51;
+
+}
+.heading{
+  text-align: center;
+  font-size: 30px;
+  text-transform: capitalize;
+
+
+}
+.radio{
+  text-align:
+  font-size: 18px;
+  text-transform: uppercase;
+
+}
+.last{
+  margin-left: 47px;
+  margin-top: -18px;
+}
+.homeheading{
+  text-align:center;
+  margin-top: 110px;
+  color: #f5b669;
+  text-transform: capitalize;
+  font-size: 35px;
+
+}
+.homehead{
+  color: #024a39;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.socialquiz{
+  text-decoration:  none;
+  text-transform: uppercase;
+  color: #6fd3f7;
+  font-size: 15px;
+  margin-right: 10px;
+
+
+}
+.socialquiz:hover{
+  color: #024f6b;
+}
+.btn{
+  height: 35px;
+  width: 70px;
+  background-color: #01416b;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  text-align: center;
+
+}
+.btn:hover{
+  background-color: #10824b;
+  color: #ffffff;
+}
+.timer{
+  float: right;
+  margin-top: -407px;
+  margin-right: 30%;}
+p{
+  color: white;
+}

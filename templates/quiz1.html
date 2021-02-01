@@ -24,12 +24,12 @@
           <label class="radio"><input   type="radio" name="name" value="{{i.optionfour}}">4. {{i.optionfour}}</label>
           <br>
           {% endfor %}
-
+           <br>
+           <button type="button" id="save_ans" class="sub btn">submit</button>
+           <br>
           {% if qu.has_next %}
            <a href="?page={{ qu.next_page_number }}"> <button type="button" class="next btn" id="button"> Next </button></a>
-           <br>
-           <button type="submit" id="save_ans" class="sub btn">submit</button>
-           <br>
+           
              {% else %}
 
             <a href="result/" ><button type="button" class="next btn" id="button"> submit Test </button></a>

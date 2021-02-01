@@ -31,7 +31,7 @@ def main(request):
 
     try:
         qu  = paginator.page(page)
-    except(EmptyPage,InvaildPage):
+    except(EmptyPage,InvalidPage):
         qu = paginator.page(page.num_pages)
     return render(request,'quiz1.html',{'obj':obj ,'qu':qu})
 
@@ -48,7 +48,7 @@ def quiz2(request):
     try:
         qu  = paginator.page(page)
     except(EmptyPage,InvaildPage):
-        qu = paginator.page(page.num_pages)
+        qu = paginator.page(paginator.num_pages)
     return render(request,'quiz2.html',{'object':object ,'qu':qu})
 
 def result(request):
